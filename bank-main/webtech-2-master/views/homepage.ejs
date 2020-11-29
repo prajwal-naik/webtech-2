@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>index</title>
+    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Poppins:wght@300&display=swap" rel="stylesheet"> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abel">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Actor">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amiko">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bitter:400,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="assets/css/Footer-Basic.css">
+    <link rel="stylesheet" href="assets/css/Footer-Clean.css">
+    <link rel="stylesheet" href="assets/css/Header-Blue-1.css">
+    <link rel="stylesheet" href="assets/css/Header-Blue.css">
+    <link rel="stylesheet" href="assets/css/Header-Dark.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <style>
+         body{
+        font-family: 'Poppins';
+        
+    }
+        .fa{
+            color:black;
+            font-size: x-large;
+
+        }
+        .box{
+            margin-top: 5%;
+            padding-top:4%;
+            padding-left: 7%;
+            width: 100%;
+            height:100%;
+          
+        }
+        .head{
+            margin-top: 70px;
+            font-family: 'Actor';
+            font-size: 3vh;
+        }
+        .details{
+            margin-top: 5%;
+            font-family: 'amiko';
+            font-size: 3vh;
+        }
+        #footer {
+    position: fixed;
+    height: 50px;
+    
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 0px;
+}
+.calci{
+    background-color: rgb(182, 212, 228);
+    height:600px;
+    margin-top: 9%;
+    padding-top:4%;
+    
+}
+footer{
+    font-family: 'Poppins';
+    margin-bottom: 5%;
+}
+body{
+    overflow-x: hidden;
+}
+.imagelist{
+    margin-top: 5%;
+    padding-top:4%;
+    
+}
+.contact{
+    margin-top: 10%;
+    font-size: 5vh;
+    margin-bottom: 5%;
+}
+    </style>
+</head>
+
+<body>
+   
+    <nav class="navbar navbar-light navbar-expand-xl sticky-top visible navbar-expand-lg navbar-color" style="background-color: rgb(29,65,139);color: rgb(255,255,255);filter: grayscale(0%);">
+        <div class="container-fluid">
+            <!-- Start: navbar-toggle --><button data-toggle="collapse" data-target="#Navbar" class="navbar-toggler col-xs-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <!-- End: navbar-toggle -->
+            <!-- Start: logo-navbar -->
+<!-- <div class="col-xs-11 ml-auto mr-auto content-center navbar-brand"> -->
+	<a href="/" class="navbar-brand col-xs-11 ml-auto mr-auto content-center">
+	<img src="logo.png" style="width: 150px"/>
+	</a>
+<!-- </div> -->
+            <!-- End: logo-navbar -->
+            <!-- Start: navbar-list --><div class="col-lg collapse navbar-collapse visible navbar-font"  id="Navbar">
+	
+	<ul class="navbar-nav ml-auto mr-auto">
+		<li class="nav-item"><a class="btn btn-link btn-lg text-black-50 mr-auto ml-auto" href="/accounts"><span class="white">Accounts</span></a></li>
+		<li class="nav-item"> <a type="submit" class="btn btn-link btn-lg text-black-50 mr-auto ml-auto" href="/loans"><span class="white">Loans</span></a></li>
+		<li class="nav-item"><a class="btn btn-link btn-lg text-black-50 mr-auto ml-auto" href="/investment"><span class="white">Investments</span></a></li>
+		<li class="nav-item"><a class="btn btn-link btn-lg text-black-50 mr-auto ml-auto" href="/hispay"><span class="white">Payments</span></a></li>
+		<li class="nav-item">
+            <form action="/logout" method="POST">
+			<button id="loginButton" class="btn-lg btn-outline-primary text-capitalize border login-button rounded border-dark ml-3"  type="submit">Logout
+			</button></form>
+		</li>
+	</ul>
+</div>
+            <!-- End: navbar-list -->
+        </div>
+    </nav>
+    <div class="form-row"> 
+
+        <div class="form-group col-md-5">
+         <div class="box">
+             <div class="head">
+                 Account Details
+             </div>
+             <div class="details">
+                 Hello , <%=name%><br>
+                 Statement<br>
+                 <%=address%><br>
+                 <%=phone%><br>
+                 <%=email%><br>
+             </div>
+
+         </div>
+         </div>
+         <div class="form-group col-md-3">
+            <div class="imagelist" >
+                <img class="mySlides" id="img" src="<%=age%>" value="<%=age%>" height="600px" width="100%">
+              
+              </div>
+         </div>
+         <div class="form-group col-md-3">
+           <div class="calci">
+               <center>
+                <i class="fa fa-calculator" style="color:white;margin-top: 10%;font-family: 'Courier New', Courier, monospace;font-size: x-large;" aria-hidden="true"> Calculator</i>
+            </center>
+           </div>
+         </div>
+        
+        
+        
+       </div>
+       
+       <footer class="footer footer-color text-center">
+           <center><p class="contact">Contact Us</p></center>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-5 mb-lg-0">
+                    <h4 class="text-uppercase mb-4" style="font-family: 'Sofia';font-weight: 800;">Location</h4>
+                    <p class="lead mb-0" >The Red Keep,<br>King's Landing,<br>Westeros-321400</p>
+                </div>
+                <div class="col-md-4 mb-5 mb-lg-0">
+                    <h4 class="text-uppercase mb-4" style="font-family: 'Sofia';font-weight: 800;">Around the Web</h4>
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a class="btn btn-outline-light btn-social text-center rounded-circle" role="button" href="www.facebook.com"><i class="fa fa-facebook fa-fw"></i></a></li>
+                        <li class="list-inline-item"><a class="btn btn-outline-light btn-social text-center rounded-circle" role="button" href="www.instagram.com"><i class="fa fa-instagram fa-fw"></i></a></li><br>
+                        <li class="list-inline-item"><a class="btn btn-outline-light btn-social text-center rounded-circle" role="button" href="wwww.twitter.com"><i class="fa fa-twitter fa-fw"></i></a></li>
+                        <li class="list-inline-item"><a class="btn btn-outline-light btn-social text-center rounded-circle" role="button" href="www.linkedin.com"><i class="fa fa-linkedin fa-fw"></i></a></li>
+                    </ul>
+                </div> 
+                <div class="col-md-4" style="margin-bottom: 5%;">
+                    <h4 class="text-uppercase mb-4" style="font-family: 'Sofia';font-weight: 800;">The Team</h4>
+                    <p class="lead mb-0"><span>Aditi </span></p>
+                    <p class="lead mb-0"><span>Prajwal </span></p>
+                    <p class="lead mb-0"><span>Shashank </span></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+   
+    <div class="copyright py-4 text-center text-white" id="footer" style="background-color: #000000;height: 17px;padding-top: 0px;padding-bottom: 0px;">
+        <div class="container" style="margin-top: -10px;margin-bottom: -30px;"><small>Copyright © KLN Group 2020</small></div>
+    </div>
+    
+</body>
+
+</html>
+<script>
+move()
+var val=1;
+    var age=document.getElementById('img').src;
+    var list=age.split('-')
+    var end=parseInt(list[1].charAt(0))
+    console.log(end)
+function move(){
+    
+   
+    
+        console.log(val)
+        if (val<=end){
+
+    document.getElementById('img').src=list[0]+'-'+val+'.png';
+    setTimeout(move, 4000); 
+    val+=1;
+        }
+        else{
+            val=1;
+            setTimeout(move, 4000); 
+        }
+  
+}
+</script>

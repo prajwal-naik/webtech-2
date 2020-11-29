@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>index</title>
+    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Poppins:wght@300&display=swap" rel="stylesheet"> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abel">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Actor">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amiko">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bitter:400,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="assets/css/Footer-Basic.css">
+    <link rel="stylesheet" href="assets/css/Footer-Clean.css">
+    <link rel="stylesheet" href="assets/css/Header-Blue-1.css">
+    <link rel="stylesheet" href="assets/css/Header-Blue.css">
+    <link rel="stylesheet" href="assets/css/Header-Dark.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <style>
+        body{
+          
+        }
+        .fa{
+            color:black;
+            font-size: x-large;
+
+        }
+        .box{
+            margin-top: 5%;
+            padding-top:4%;
+            padding-left: 10%;
+            width: 100%;
+            
+                
+        }
+        .box1{
+            margin-top: 2%;
+            padding-top:4%;
+            margin-left: 25%;
+            
+            width: 100%;
+            
+                
+        }
+        
+        .head{
+            font-family: 'Actor';
+            font-size: 3vh;
+        }
+        .details:hover{
+            overflow-y: scroll;
+        }
+        .details{
+            margin-top: 5%;
+            font-family: 'amiko';
+            font-size: 3vh;
+            height:450px;
+            overflow-y: scroll;
+            overflow: hidden;
+            
+           
+        }
+       a:link{
+           color:black;
+       
+       }
+        #footer {
+    position: fixed;
+    height: 50px;
+    
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 0px;
+}
+.loan{
+    font-family: 'Poppins';
+font-size: x-large; 
+margin-top: 1%;
+color: #000000;
+width:40%;
+border-radius: 2px;
+    
+}
+.loan:hover{
+    background-color: #5bc0de;
+}
+.loangrp{
+    margin-top: 8%;
+}
+footer{
+    font-family: 'Poppins';
+    margin-bottom: 5%;
+}
+body{
+    overflow-x: hidden;
+}
+.imagelist{
+    margin-top: 5%;
+    padding-top:16%;
+    
+}
+.data{
+    font-family: 'Poppins';
+    display: inline;
+}
+.contact{
+    margin-top: 10%;
+    font-size: 5vh;
+    margin-bottom: 5%;
+}
+.indu{
+    margin-top:7%;
+    margin-left: 5%;
+       
+}
+.mySlides{
+    
+max-width: 100%;
+    
+}
+    </style>
+</head>
+
+<body>
+    <div class="modal" id="myModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+          
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">Schedule a Investment Meeting</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            
+            <!-- Modal body -->
+           <center>
+            <div class="box1">
+            <form action="/send" method="POST">
+            <div class="form-row"> 
+
+                <div class="form-group col-md-6">
+                    <input type="text" class="form-control f1" name="text" value="" placeholder="Type of Investment" required>
+                 </div>
+                
+                
+               </div>
+               <div class="form-row"> 
+
+                <div class="form-group col-md-6">
+                    <input type="text" class="form-control f1" name="plan" value="" placeholder="Plan" required>
+                 </div>
+                
+                
+               </div>
+               <div class="form-row"> 
+
+                <div class="form-group col-md-6">
+                    <input type="text" class="form-control f1" name="duration" value="" placeholder="Duration" required>
+                 </div>
+                
+                
+               </div>
+               <div class="form-row"> 
+
+                <div class="form-group col-md-6">
+                    <input type="date" class="form-control f1" name="date" value="" placeholder="Duration" required>
+                 </div>
+                
+                
+               </div>
+               <div class="form-row"> 
+
+                <div class="form-group col-md-6">
+                    <input type="time" class="form-control f1" name="time" value="" placeholder="Duration" required>
+                 </div>
+                
+                
+               </div>
+               <div class="form-row"> 
+
+                <div class="form-group col-md-6">
+                   <button class="btn btn-warning">Request for Investment</button>
+                 </div>
+                
+                
+               </div></form></div></center>
+            
+          </div>
+        </div>
+      </div>
+   
+    <nav class="navbar navbar-light navbar-expand-xl sticky-top visible navbar-expand-lg navbar-color" style="background-color: rgb(29,65,139);color: rgb(255,255,255);filter: grayscale(0%);">
+        <div class="container-fluid">
+            <!-- Start: navbar-toggle --><button data-toggle="collapse" data-target="#Navbar" class="navbar-toggler col-xs-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <!-- End: navbar-toggle -->
+            <!-- Start: logo-navbar -->
+<!-- <div class="col-xs-11 ml-auto mr-auto content-center navbar-brand"> -->
+	<a href="/" class="navbar-brand col-xs-11 ml-auto mr-auto content-center">
+	<img src="logo.png" style="width: 150px"/>
+	</a>
+<!-- </div> -->
+            <!-- End: logo-navbar -->
+            <!-- Start: navbar-list --><div class="col-lg collapse navbar-collapse visible navbar-font"  id="Navbar">
+	
+	<ul class="navbar-nav ml-auto mr-auto">
+		<li class="nav-item"><a class="btn btn-link btn-lg text-black-50 mr-auto ml-auto" href="/accounts"><span class="white">Accounts</span></a></li>
+		<li class="nav-item"><a class="btn btn-link btn-lg text-black-50 mr-auto ml-auto" href="/loans"><span class="white">Loans</span></a></li>
+		<li class="nav-item"><a class="btn btn-link btn-lg text-black-50 mr-auto ml-auto" href="/investment"><span class="white">Investments</span></a></li>
+		<li class="nav-item"><a class="btn btn-link btn-lg text-black-50 mr-auto ml-auto" href="/hispay"><span class="white">Payments</span></a></li>
+		<li class="nav-item">
+            <form action="/logout" method="POST">
+			<button id="loginButton" class="btn-lg btn-outline-primary text-capitalize border login-button rounded border-dark ml-3"  type="submit">Logout
+			</button></form>
+		</li>
+	</ul>
+</div>
+            <!-- End: navbar-list -->
+        </div>
+    </nav>
+    <div class="form-row"> 
+
+        <div class="form-group col-md-6">
+         <div class="box">
+             <div class="head">
+                 Investment Details
+             </div>
+             <% if (investments){%>
+             
+             <div class="details">
+                 <h6>Scroll to load more</h6>
+                 
+                <% for (var i in investments){%>
+                    <% if (i==1){%>
+                        <div class="disp" style="font-size: 20px;margin-left: 5%;margin-top: 2%;">Scroll to load More <i class="fa fa-arrow-down"></i> </div>
+                        <%}%>
+                    <div class="indu">
+                        <div class="data"><div class="label"><i class="fas fa-angle-right"></i> Investment id <%=i%></div></div> 
+                <form action="/payment" method="POST">
+               <div class="data"><div class="label">Investment Type <i class="fas fa-long-arrow-alt-right"></i> <%=investments[i].type%></div></div> 
+               <div class="data"><div class="label">Amount  <i class="fas fa-long-arrow-alt-right"></i> <%=investments[i].amount%></div></div>
+               <div class="data"><div class="label">Date <i class="fas fa-long-arrow-alt-right"></i> <%=investments[i].date%></div></div>
+               <div class="data"><div class="label">Base <i class="fas fa-long-arrow-alt-right"></i> <%=investments[i].base%></div></div>
+               <div class="data"><div class="label">Duration <i class="fas fa-long-arrow-alt-right"></i> <%=investments[i].duration%></div></div>
+               <button class="btn btn-warning" name="id" value="<%=i%>">Add Amount</button>
+               
+            </form>
+                    </div>
+               <%}%>
+             </div>
+             <%}else{%>
+                <div class="message" style="margin-top:20%;font-size: 3vh;margin-left: 5%;">No loans Taken! Click any Loans to Apply!</div>
+                <%}%>
+
+
+         </div>
+         </div>
+         <div class="form-group col-md-5">
+            <div class="form-row"> 
+                <center>
+                <div class="imagelist" >
+                    <img class="mySlides" id="img" src="https://cdn.bootstrapstudio.io/placeholders/1400x800.png"  height="400px" width="100%" >
+                  
+                  </div></center>
+            </div>
+            <div class="form-row"> 
+                <button class="btn btn-primary" style="width: 100%;margin-top: 2%;height: 70px;background-color: rgb(29,65,139);" data-toggle="modal" data-target="#myModal">New Investment</button>
+                </div>
+             </div>
+          
+  
+        
+        
+        
+       </div>
+       
+       <footer class="footer footer-color text-center">
+           <center><p class="contact">Contact Us</p></center>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-5 mb-lg-0">
+                    <h4 class="text-uppercase mb-4" style="font-family: 'Sofia';font-weight: 800;">Location</h4>
+                    <p class="lead mb-0" >The Red Keep,<br>King's Landing,<br>Westeros-321400</p>
+                </div>
+                <div class="col-md-4 mb-5 mb-lg-0">
+                    <h4 class="text-uppercase mb-4" style="font-family: 'Sofia';font-weight: 800;">Around the Web</h4>
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a class="btn btn-outline-light btn-social text-center rounded-circle" role="button" href="www.facebook.com"><i class="fa fa-facebook fa-fw"></i></a></li>
+                        <li class="list-inline-item"><a class="btn btn-outline-light btn-social text-center rounded-circle" role="button" href="www.instagram.com"><i class="fa fa-instagram fa-fw"></i></a></li><br>
+                        <li class="list-inline-item"><a class="btn btn-outline-light btn-social text-center rounded-circle" role="button" href="wwww.twitter.com"><i class="fa fa-twitter fa-fw"></i></a></li>
+                        <li class="list-inline-item"><a class="btn btn-outline-light btn-social text-center rounded-circle" role="button" href="www.linkedin.com"><i class="fa fa-linkedin fa-fw"></i></a></li>
+                    </ul>
+                </div> 
+                <div class="col-md-4">
+                    <h4 class="text-uppercase mb-4" style="font-family: 'Sofia';font-weight: 800;">The Team</h4>
+                    <p class="lead mb-0"><span>Aditi </span></p>
+                    <p class="lead mb-0"><span>Prajwal </span></p>
+                    <p class="lead mb-0"><span>Shashank </span></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+   
+    <div class="copyright py-4 text-center text-white" id="footer" style="background-color: #000000;height: 17px;padding-top: 0px;padding-bottom: 0px;">
+        <div class="container" style="margin-top: -10px;margin-bottom: -30px;"><small>Copyright © KLN Group 2020</small></div>
+    </div>
+    
+</body>
+
+</html>
+<script>
+move()
+var val=0;
+var end=1;
+function move(){
+    
+   
+    
+        console.log(val)
+        if (val<=end){
+
+    document.getElementById('img').src='investment-'+val+'.png';
+    setTimeout(move, 4000); 
+    val+=1;
+        }
+        else{
+            val=0;
+            setTimeout(move, 4000); 
+        }
+  
+}
+</script>
