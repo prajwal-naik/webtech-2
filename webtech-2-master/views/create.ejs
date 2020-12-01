@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Peddana&display=swap" rel="stylesheet">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<title>Norozo</title>
+</head>
+<style>
+    body {
+        font-family: 'Poppins';
+    }
+    /* The Modal (background) */
+    
+    .modal {
+        /* Hidden by default */
+        position: fixed;
+        /* Stay in place */
+        z-index: 1;
+        /* Sit on top */
+        padding-top: 100px;
+        /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%;
+        /* Full width */
+        height: 100%;
+        /* Full height */
+        overflow: auto;
+        /* Enable scroll if needed */
+        background-color: rgb(0, 0, 0);
+        /* Fallback color */
+        background-color: rgba(0, 0, 0, 0.4);
+        /* Black w/ opacity */
+    }
+    /* Modal Content */
+    
+    .modal-content {
+        background-color: #fefefe;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 40%;
+        align-content: center;
+    }
+    /* The Close Button */
+    
+    .close {
+        color: #aaaaaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+    
+    .close:hover,
+    .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    
+    .box1 {
+        margin-left: 30%;
+    }
+    
+    img {
+        margin-bottom: 2%;
+    }
+    
+    body {
+        font-family: 'Poppins';
+        background-color: white;
+    }
+    
+    .box {
+        margin-top: 15%;
+        width: 80%;
+    }
+    
+    .inps {
+        margin-top: 3%;
+        width: 50%;
+        border-radius: 6px;
+        border-style: solid;
+        border-color: black;
+        height: 40px;
+        text-align: center;
+    }
+    
+     ::placeholder {
+        font-family: 'Poppins';
+        text-align: center;
+    }
+    
+    .inps1 {
+        margin-top: 3%;
+        width: 50%;
+        border-radius: 6px;
+        border-style: solid;
+        border-color: black;
+        height: 40px;
+        text-align: center;
+    }
+    
+    .btn1 {
+        width: 55%;
+        margin-top: 2%;
+    }
+    
+    .btn2 {
+        width: 45%;
+        margin-top: 3%;
+    }
+    
+    .small {
+        width: 15%;
+    }
+    
+    .heading {
+        margin-top: 2%;
+        margin-bottom: 2%;
+        font-size: 3vh;
+        font-family: 'Sofia';
+    }
+    
+    .dropdown {
+        width: 55%;
+        margin-top: 3%;
+        border-color: black;
+    }
+    
+    .in {
+        display: table;
+        width: 100%;
+    }
+    
+    input {
+        text-align: left;
+    }
+    
+    .row {
+        margin-top: 2%;
+    }
+</style>
+
+<body>
+    <% if (modal==true){%>
+        <%console.log(modal)%>
+
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <h1>Please Confirm Your OTP</h1><br>
+                    <h4>Check your Mail</h4><br>
+                    <center>
+                        <div class="box1">
+                            <form action="/register" method="POST">
+                                <div class="form-row">
+
+                                    <div class="form-group col-md-6">
+                                        <input type="text" class="form-control f1" name="otp" value="" placeholder="OTP" required>
+                                    </div>
+
+
+                                </div>
+
+                                <div class="form-row">
+
+                                    <div class="form-group col-md-6">
+                                        <button class="btn btn-info" type="submit">Submit <i class="fas fa-arrow-right"></i></button>
+
+                                    </div>
+                                </div>
+                            </form>
+                            <form action="/" method="GET">
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <button class="btn btn-danger" type="submit"><i class="fas fa-arrow-left"></i> cancel</button>
+
+                                    </div>
+
+                                </div>
+                            </form>
+                        </div>
+                </div>
+                </center>
+
+            </div>
+            <%}%>
+                <nav class="navbar navbar-light navbar-expand-xl sticky-top visible navbar-expand-lg navbar-color" style="background: linear-gradient(135deg, #172a74, #21a9af);;color: rgb(255,255,255);filter: grayscale(0%);">
+                    <div class="container-fluid">
+                        <!-- Start: navbar-toggle --><button data-toggle="collapse" data-target="#Navbar" class="navbar-toggler col-xs-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                        <!-- End: navbar-toggle -->
+                        <!-- Start: logo-navbar -->
+                        <!-- <div class="col-xs-11 ml-auto mr-auto content-center navbar-brand"> -->
+                        <a href="/index" class="navbar-brand col-xs-11 ml-auto mr-auto content-center">
+                            <img src="logo.png" style="width: 150px" />
+                        </a>
+                        <!-- </div> -->
+                        <!-- End: logo-navbar -->
+                        <!-- Start: navbar-list -->
+                        <div class="col-lg collapse navbar-collapse visible navbar-font" id="Navbar">
+
+                            <ul class="navbar-nav ml-auto mr-auto">
+                                <li class="nav-item"><a class="btn btn-link btn-lg text-black-50 mr-auto ml-auto" href="/home"><span class="white">Home</span></a></li>
+
+                                <li class="nav-item"><a class="btn btn-link btn-lg text-black-50 mr-auto ml-auto" href="/accounts"><span class="white">Accounts</span></a></li>
+                                <li class="nav-item"> <a type="submit" class="btn btn-link btn-lg text-black-50 mr-auto ml-auto" href="/loans"><span class="white">Loans</span></a></li>
+                                <li class="nav-item"><a class="btn btn-link btn-lg text-black-50 mr-auto ml-auto" href="/investment"><span class="white">Investments</span></a></li>
+                                <li class="nav-item"><a class="btn btn-link btn-lg text-black-50 mr-auto ml-auto" href="/hispay"><span class="white">Payments</span></a></li>
+                                <li class="nav-item">
+                                    <form action="/logout" method="POST">
+                                        <input id="loginButton" class="btn-lg btn btn-primary  ml-3" type="submit" value="Logout >">
+                                    </form>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- End: navbar-list -->
+                    </div>
+                </nav>
+
+                <div class="container">
+                    <center>
+                        <div class="box">
+
+                            <span class="heading">Create New Account</span><br><br>
+                            <form method="POST" action="/upload">
+                                <div class="form-row">
+
+                                    <div class="form-group col-md-8">
+                                        <input type="text" class="form-control" name="name" value="" placeholder="Name" required>
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <input type="text" class="form-control" name="education" value="" placeholder="Education" required>
+                                    </div>
+
+                                </div>
+
+                                <div class="form-row">
+
+                                    <div class="form-group col-md-6">
+                                        <input type="text" class="form-control" name="phone" value="" placeholder="Phone" required>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <select class="form-control " id="sel1" name="mari" required>
+                    <option>Choose Maritial Status</option>
+                    <option>Married</option>
+                    <option>Single</option>
+                  
+                  </select>
+                                    </div>
+
+                                </div>
+                                <div class="form-row">
+
+                                    <div class="form-group col-md-6">
+                                        <input type="date" class="form-control" name="dob" min="1930-11-11" max="2005-13-13" value="" placeholder="DOB" required>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <select class="form-control " id="sel1" name="sex" required>
+                    <option>Choose Sex</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                    <option>Others</option>
+                  
+                  </select>
+                                    </div>
+
+                                </div>
+                                <div class="form-row">
+
+                                    <div class="form-group col-md-4">
+                                        <input type="email" class="form-control" name="email" value="" placeholder="email" required>
+                                    </div>
+                                    <div class="form-group col-md-8">
+                                        <input type="text" class="form-control" name="address" value="" placeholder="Address" required>
+                                    </div>
+
+
+
+                                </div>
+                                <div class="form-row">
+
+                                    <div class="form-group col-md-4">
+                                        <select class="form-control" name="occupation" required>
+                                            <option>Choose Occupation</option>
+                                            <option>Private Company / IT Employee</option>
+                                            <option>Government Employee</option>
+                                            <option>Educational Institute</option>
+                                            <option>Business / Self-Employed</option>
+                                            <option>Others</option>
+                                          
+                                          </select> </div>
+                                    <div class="form-group col-md-4">
+                                        <input type="password" class="form-control" id="password" name="pass" minlength="8" value="" onkeyup="check()" placeholder="Password" required>
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <input type="password" class="form-control" name="" id="confirm_password" value="" onkeyup="check()" placeholder="Confirm Password">
+                                    </div>
+
+
+
+                                </div>
+
+
+
+
+                                <br>
+                                <span id='message'></span><br>
+                                <button class="btn btn-info btn1 " id="submitbt">Create Account ></button>
+
+
+                            </form>
+                            <form action="/" method="GET">
+                                <button class="btn btn-danger btn1" id="submitbt">< Cancel </button></form>
+                    </center>
+                    </div>
+</body>
+
+</html>
+<script>
+    var check = function() {
+        if (document.getElementById('password').value ==
+            document.getElementById('confirm_password').value && document.getElementById('password').value.length > 0) {
+            document.getElementById('message').style.color = 'green';
+            document.getElementById('message').innerHTML = 'Password Match';
+            document.getElementById('submitbt').disabled = false;
+        } else {
+            document.getElementById('message').style.color = 'red';
+            document.getElementById('message').innerHTML = 'PassWord Doesn"t Match';
+            document.getElementById('submitbt').disabled = true;
+        }
+    }
+
+    var modal = document.getElementById("myModal");
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks the button, open the modal 
+
+    modal.style.display = "block";
+
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
